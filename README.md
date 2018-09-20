@@ -1,21 +1,13 @@
-[![Docker Automated buil](https://img.shields.io/docker/automated/jjanzic/docker-python3-opencv.svg)]()
-
-Docker image with python 3.6 and opencv 3.4.1
-
 Usage:
 
-    docker run -it jjanzic/docker-python3-opencv python
+    docker run -it scndel/python3-opencv python
     >>> import cv2
 
-Image tagged with `:contrib` contains docker image built with [contrib modules](https://github.com/opencv/opencv_contrib/)
+Cette image est créée selon la configuration d'environnement prévue par le Linux Magazine / France Hors-série n°96 "Vision assistée par Ordinateur avec OpenCV".
 
-List of available docker tags:
+Pour inclure vos propres fichiers d'images, montez un volume dans le container lié au dossier local de votre machine les contenant:
 
-- `opencv-3.4.1` (`latest` branch)
-- `contrib-opencv-3.4.1` (`opencv_contrib` branch)
-- `opencv-3.4.0`
-- `contrib-opencv-3.4.0`
-- `opencv-3.3.0`
-- `contrib-opencv-3.3.0`
-- `opencv-3.2.0`
-- `contrib-opencv-3.2.0`
+    docker run -it -v <localDirectoryPath>:/home/ scndel/python3-opencv python
+    >>> import cv2
+
+Thanks to jjanzic for his great work. This image is a fork of https://hub.docker.com/r/jjanzic/docker-python3-opencv/ and contains OpenCV contrib.   
