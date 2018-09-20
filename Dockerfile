@@ -28,7 +28,7 @@ RUN apt-get update && \
         libtheora-dev \
         libgtk-3-dev \
         libgtk2.0-dev \
-        libqt5-dev \
+        libqt4-dev \
         libatlas-base-dev \
         libopenblas-dev \
         libeigen3-dev \
