@@ -7,7 +7,7 @@ Cette image est créée selon la configuration d'environnement prévue par le Li
 
 Pour inclure vos propres fichiers d'images, montez un volume dans le container lié au dossier local de votre machine les contenant:
 
-    docker run -it -v <localDirectoryPath>:/home/ scndel/python3-opencv python
+    docker run -it -v <localDirectoryPath>:/home/ -w="/home" scndel/python3-opencv python
     >>> import cv2
 
 Thanks to jjanzic for his great work. This image is a fork of https://hub.docker.com/r/jjanzic/docker-python3-opencv/ and contains OpenCV contrib.   

@@ -39,7 +39,7 @@ RUN pip install numpy
 RUN pip install matplotlib
 
 WORKDIR /
-ENV OPENCV_VERSION="3.3.1"
+ENV OPENCV_VERSION="3.4.1"
 RUN wget https://github.com/opencv/opencv_contrib/archive/${OPENCV_VERSION}.zip \
 && unzip ${OPENCV_VERSION}.zip \
 && rm ${OPENCV_VERSION}.zip
